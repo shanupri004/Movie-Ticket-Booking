@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/admin.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Admin Login</h1>
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" id="email">
+
+            <label>password</label>
+            <div class="pass"><input type="password" id="pass" maxlength="8"  placeholder="Enter Password">
+                <button class="icon" onclick="toggle()"><i class="fa-regular fa-eye"  id="icon1"></i></button>
+            </div>
+                <p id="error"></p>
+                <p id="sucess"></p>
+            <input type="submit" value="Submit" onclick="submit()">
+        </div>
+    </div>  
+    <script src="./script/admin.js"></script>  
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Manager</title>
+  <link rel="stylesheet" href="./style/admindashboard.css">
+  <link rel="icon" href="./images/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<button onclick="addMovie()" style="position: absolute; right: 12%; top: 20px;width: 10%;height: 40px;background-color: transparent; border-radius: 10px; border: none; cursor: pointer; color: white; font-size: 20px; background-color: #1DE782;">+ Create New</button>
+<button onclick="logOut()" style="position: absolute; right: 10px; top: 20px;width: 10%;height: 40px;background-color: transparent; border-radius: 10px; border: none; cursor: pointer; color: white; font-size: 20px; background-color: red;">Log Out</button>
+
+<form id="movieForm" onsubmit="event.preventDefault(); upload();">
+  <h3>Movie Form</h3>
+  <label>Movie Title:</label><br/>
+  <input type="text" id="movie-name" required/><br/><br/>
+
+  <label>Description:</label><br/>
+  <textarea id="desc" required></textarea><br/><br/>
+
+  <label>Duration (HH:MM):</label><br/>
+  <input type="number" id="hour" min="0" max="12" onblur="formatHour(this)" placeholder="HH" required />
+  :
+  <input type="number" id="mins" min="0" max="59" onblur="formatMin(this)" placeholder="MM" required /><br/><br/>
+
+  <div class="date" style="display: flex;"> 
+    <label>Start Date:</label><br/>
+  <input type="date" id="show-date" required style="width: 150px; margin-left: 5px;margin-right: 10px;"/>
+
+  <label>End Date:</label><br/>
+  <input type="date" id="end-date" required style="width: 150px; margin-left: 5px;margin-right: 10px"/>
+  </div>
+<br/><br/>
+  <label>Upload Poster:</label><br/>
+  <input type="file" id="poster" accept="image/*" />
+
+  <label>Or Enter Poster URL:</label><br/>
+  <input type="text" id="poster-url" /><br/><br/>
+
+  <div class="btn" style="display: flex; justify-content: space-evenly;">
+    <button type="submit" class="submit">Save Movie</button>
+  <button type="button" class="submit" onclick="closeForm()" style="background-color: red;">Cancel</button>
+  </div>
+</form>
+
+<table id="movieTable">
+  <thead>
+    <tr>
+      <th>Poster</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Duration</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="./script/admindashboard.js"></script>
+
+</body>
+</html>

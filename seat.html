@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Seat Booking</title>
+  <link rel="stylesheet" href="./style/seat.css" />
+  <link rel="icon" href="./images/logo1.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="main">
+    <div class="booking-container" id="booking">
+      <h1>Seat Booking</h1>
+      <h2 id="movieName">Movie Name</h2>
+      <p id="movieDate">Date</p>
+
+      <div class="screen">SCREEN</div>
+      <div class="seats" id="seatGrid"></div>
+
+      <div class="info">
+        <p><span id="SS"></span> Selected</p>
+        <p><span id="OPS"></span> Occupied</p>
+        <p><span id="AS"></span> Available</p>
+      </div>
+
+      <button id="confirmBtn">Confirm Booking</button>
+    </div>
+  </div>
+  <div class="bill" id="bill">
+    <h1><center>WarZone Cinemas</center></h1>
+    <h1 id="BookedTitle" style="text-align: center;">Movie Name</h1> <br>
+    <pre>
+    <span class="label">Date           : </span><span class="label" id="BookedDate"></span>
+    <span class="label">booked Seats   : </span><span class="label" id="BookedSeats"></span> 
+    <span class="label">price per seat : 250</span>
+    <span class="label">Total Price    : </span><span class="label" id="BookedPrice"></span>
+    </pre> 
+    <button id="pay" onclick="pay()"> proceed to pay</button>
+  </div>
+
+  <script src="./script/seat.js"></script>
+</body>
+</html>

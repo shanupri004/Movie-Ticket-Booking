@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/back.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* display: flex; */
+}
+.main2{
+    display: flex;
+}
+
+.logo {
+    width: 100px;  
+    margin: 15px;
+    height: 100px;
+}
+
+.content {
+    width: 40%;
+    height: 70vh;
+    margin-right: 10%;
+    font-size: 50px;
+    font-family: Ink free;
+    /* text-align: justify; */
+    padding-left: 30px;
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.login-signup {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin: 0;
+    height:100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup {
+    display: none;
+    width: 60%;
+}
+
+#signup h2 {
+    margin: 20px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#signup label {
+    margin: 20px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#signup input {
+    width: 100%;
+    height: 30px;
+    text-indent: 10px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+#signup .icon {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.pass {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    margin: 0;
+}
+
+.sucess {
+    color: rgb(28, 196, 28);
+    margin: 0;
+}
+
+.submit {
+    border: none;
+    width: 100%;
+    height: 30px;
+    /* padding: 15px; */
+    background-color: #18C76A;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.nav {
+    background-color: transparent;
+    border: none;
+    color: #18C76A;
+    cursor: pointer;
+}
+
+
+#login {
+    display: block;
+}
+
+#login h2 {
+    margin: 20px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#login label {
+    margin: 20px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#login input {
+    width: 100%;
+    height: 30px;
+    text-indent: 10px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+#login .icon {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
