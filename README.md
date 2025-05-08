@@ -4,24 +4,24 @@ A simple and responsive movie ticket booking web application built using **HTML*
 
 ### 🔧 Features
 
-* *   🎬 Movie selection dropdown
+*   🎬 Movie selection dropdown
 *     
-* *   🪑 Interactive seat selection layout
+*   🪑 Interactive seat selection layout
 *     
-* *   💸 Dynamic ticket pricing based on selected movie
+*   💸 Dynamic ticket pricing based on selected movie
 *     
-* *   💾 Booking data saved using localStorage
+*   💾 Booking data saved using localStorage
 *     
-* *   📱 Fully responsive design for mobile and desktop
+*   📱 Fully responsive design for mobile and desktop
 *     
 
 ### 💻 Tech Stack
 
-* *   **HTML** – Markup for structure
+*   **HTML** – Markup for structure
 *     
-* *   **CSS** – Styling and layout
+*   **CSS** – Styling and layout
 *     
-* *   **JavaScript** – Dynamic interactions and data handling
+*   **JavaScript** – Dynamic interactions and data handling
 *     
 
 ### 📸 Screenshots
