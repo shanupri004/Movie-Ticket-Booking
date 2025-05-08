@@ -23,4 +23,4 @@ A simple and responsive movie ticket booking web application built using **HTML*
 
 ### 📸 Screenshots
 
-![Login](screenshots/Login.png)
+![Login](sreenshots/Login.png)
